@@ -176,8 +176,9 @@ public class MazeResult
             }
         }
 
-        int endTimeSeconds = this.getEndTime().getTotalSecs();
-        int finalTimeSeconds = endTimeSeconds + timePenalty;
+        Time actualTime = this.getStartTime().getDifference(this.getEndTime());
+        int actualSeconds = actualTime.getTotalSecs();
+        int finalTimeSeconds = actualSeconds + timePenalty;
 
         if(this.getRat().getGender() == 'F') {
             finalTimeSeconds = (int)Math.round(finalTimeSeconds * .9);

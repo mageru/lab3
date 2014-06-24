@@ -53,8 +53,8 @@
       <file leaf-file-name="MazeResult.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MazeResult.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4826087" vertical-offset="2982" max-vertical-offset="3774">
-              <caret line="198" column="7" selection-start-line="198" selection-start-column="7" selection-end-line="198" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.4826087" vertical-offset="2676" max-vertical-offset="3791">
+              <caret line="180" column="59" selection-start-line="180" selection-start-column="59" selection-end-line="180" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -569,12 +569,12 @@
       <workItem from="1403552522462" duration="504000" />
       <workItem from="1403553118706" duration="201000" />
       <workItem from="1403553386693" duration="142000" />
-      <workItem from="1403566405814" duration="4233000" />
+      <workItem from="1403566405814" duration="4522000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5080000" />
+    <option name="totallyTimeSpent" value="5369000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -822,8 +822,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MazeResult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4826087" vertical-offset="2982" max-vertical-offset="3774">
-          <caret line="198" column="7" selection-start-line="198" selection-start-column="7" selection-end-line="198" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.4826087" vertical-offset="2676" max-vertical-offset="3791">
+          <caret line="180" column="59" selection-start-line="180" selection-start-column="59" selection-end-line="180" selection-end-column="59" />
           <folding />
         </state>
       </provider>
