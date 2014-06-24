@@ -153,7 +153,8 @@ public class MazeResult
         
         // <your code here>
         // "Wrong, wrong, wrong" is not the correct value to return
-        return "Wrong, wrong, wrong";
+
+        return (this.getStartTime().getDifference(this.getEndTime())).toString();
     }   
     
     /**
@@ -209,6 +210,10 @@ public class MazeResult
         
         // <your code here>
         // "Wrong, wrong, wrong" is not the correct value to return
-        return "Wrong, wrong, wrong";
+        String output = "Start Time: " + this.getStartTime().toString() + "\n"
+                       +"End Time: " + this.getEndTime().toString() + "\n"
+                       +"Actual Time: " + this.getActualTime() + "\n"
+                       +"Contest Time: " + this.getContestTime() + "\n";
+        return output;
     }   
 }
