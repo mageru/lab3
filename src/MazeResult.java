@@ -163,13 +163,32 @@ public class MazeResult
      */
     public String getContestTime()
     {
-        // Compute the contest (adjusted) maze time and 
-        // format it as HH:MM:SS
-        
-        // remember to round where needed
-        
-        // "Wrong, wrong, wrong" is not the correct value to return
-        return "Wrong, wrong, wrong";
+        int timePenalty = 0;
+
+        for(int i=1;i<this.getNumOfErrors();i++) {
+            if(i < 3 ) {
+                timePenalty = timePenalty + 3;
+            } else if (i < 5) {
+                timePenalty = timePenalty + 5;
+            } else {
+                timePenalty = timePenalty + 7;
+            }
+        }
+
+        int endTimeSeconds = this.getEndTime().getTotalSecs();
+        int finalTimeSeconds = endTimeSeconds + timePenalty;
+
+        if(this.getRat().getGender() == 'F') {
+            finalTimeSeconds = (int)Math.round(finalTimeSeconds * .9);
+        }
+
+        if(!this.getRat().getIsVaccinated()) {
+            finalTimeSeconds = (int)Math.round(finalTimeSeconds * 1.1);
+        }
+
+        Time finalTime = new Time(finalTimeSeconds);
+
+        return finalTime.toString();
     }   
     
     /**
